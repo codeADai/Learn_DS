@@ -35,6 +35,7 @@ void insertion(int arr[], size_t size){
         key = arr[i];
 
         // Compare each element
+        // !! When arr element < Key quit the while
         size_t j = i - 1;
         while(key < arr[j] && j >= 0){
             arr[j + 1] = arr[j];
